@@ -1,0 +1,32 @@
+.flex-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: green;
+
+
+    display: flex;
+   /* Esto es lo mismo que decir:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+   
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }

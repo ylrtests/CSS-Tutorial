@@ -1,0 +1,19 @@
+.parent {
+    display: flex;
+    height: 200px; /* Or whatever */
+    background-color: blue;
+    /* 
+    También sirve omitiendo el margin de .child y añadiendo estas propiedades:
+
+    align-items: center; //Alinea verticalmente
+    justify-content: center; //Alinea horizontalmente
+    
+    */
+  }
+  
+.child {
+    width: 50px;  /* Or whatever */
+    height: 50px; /* Or whatever */
+    margin: auto;
+    background-color: yellow;
+  }

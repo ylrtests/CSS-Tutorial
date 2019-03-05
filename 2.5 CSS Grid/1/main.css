@@ -1,0 +1,67 @@
+main > * { /* Hijos directos de main */
+    background-color: goldenrod;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* >>[1]<< Definimos el GRID Container
+* El enfoque será first-mobile
+*/
+
+main{
+    display: grid;
+    grid-gap: 10px;
+
+/* >>[3]<< Definimos la columna en enfoque móvil*/
+    grid-template-areas: 
+        "header"
+        "izquierda"
+        "contenido"
+        "derecha"
+        "footer";
+}
+
+/* >>[4]<< Definimos el enfoque para escritorio. Para escritorio sera tres columnas.*/
+@media (min-width: 500px){
+    
+    main{
+        /*El grid sera un 3x3*/
+        /* grid-template-areas: 
+            "header header header"
+            "izquierda contenido derecha"
+            "footer footer footer"
+            ; */
+
+        /*Si se coloca un punto, este representará un espacio vacio en el grid. */
+        
+        
+        grid-template-areas: 
+            "header header header"
+            "izquierda contenido derecha"
+            "footer footer ."
+            ;
+       
+    }
+}
+
+
+/* >>[2]<< Relacionamos un área a cada elemento. */
+
+header{
+    grid-area: header;
+}
+aside:first-of-type{
+    grid-area: izquierda;
+}
+
+article{
+    grid-area: contenido;
+}
+
+aside:last-of-type{
+    grid-area: derecha;
+}
+
+footer{
+    grid-area: footer;
+}

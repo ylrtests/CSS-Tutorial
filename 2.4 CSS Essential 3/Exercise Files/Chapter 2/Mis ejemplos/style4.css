@@ -1,0 +1,50 @@
+.flex-container-2{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: gray;
+
+
+    display: flex;
+   /* Esto es lo mismo que decir:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+   
+  flex-flow: row nowrap;
+
+
+}
+
+
+.flex-item-2 {
+    background: orange;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+
+    margin: 10px;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+
+    flex: 1;
+  }
+
+  .flex-item-3 {
+    background: orange;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+
+    margin: 10px;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+
+    flex: 3;
+  }

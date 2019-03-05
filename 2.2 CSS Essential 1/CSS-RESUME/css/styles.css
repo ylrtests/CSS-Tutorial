@@ -1,0 +1,85 @@
+/* Color Palette
+==============================
+#2B2D42 = dark blue
+#8d99ae = light blue
+#edf2f4 = blue/white
+#ef233c = red
+
+*/
+
+/*Global Styles
+============================================================*/
+body{
+     font-family: 'Open Sans Condensed', sans-serif;
+     margin: 0;
+}
+
+h1,h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2em;
+    margin-top: 0;
+}
+a{
+    color: #ef233c;
+}
+
+a:hover{
+    text-decoration: none; /*Remove underline when hover*/
+}
+
+.content-wrap{
+    width: 80%;
+    margin: 0 auto; /*Ayuda a centrar el elemento!*/
+    padding: 5em;
+}
+
+/*Header and Footer
+==========================================================*/
+header, footer{
+    background: #2B2D42;
+    color: #8d99ae;
+}
+
+header{
+    text-align: center;
+}
+
+header h1, header h2{
+    color: #edf2f4;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+}
+
+.contact-info a{
+    background: white;
+    padding: 0.5em;
+    display: inline-block;
+}
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+/* Education
+============================================================*/
+
+.education{
+    background: #8d99ae;
+
+}
+
+/*Work Experience 
+============================================================*/ 
+.work{
+    background: #edf2f4;
+}

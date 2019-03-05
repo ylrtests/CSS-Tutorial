@@ -1,0 +1,33 @@
+main{
+    display: grid;
+    height: 95vh;
+    grid-gap: 10px;
+    font-family: sans-serif;
+
+    grid-template-columns: 
+        /* repeat(8,1fr) */
+
+        /*Designando un limite inferior y superior de las columnas*/
+        /*8 columnas con un limite: minimo: 100 px - máximo: 1fr*/
+
+        /* repeat(8, minmax(100px,1fr)) */
+
+        /*8 columnas con un Patrón de 2: 30px primer columna, minmax(10%,1fr) */
+        
+        /* repeat(4, 30px minmax(10%,1fr)) */
+        
+        /*8 columna: minimo por contenido y máximo por contenido. */
+
+        repeat(8, minmax(min-content, max-content))
+    
+    ;
+
+}
+
+div{
+    font-family: sans-serif;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
